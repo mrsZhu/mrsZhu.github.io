@@ -53,7 +53,7 @@
 		version: '2.1.5',
 
 		defaults: {
-			padding : 15,
+			padding : 0,
 			margin  : 20,
 
 			width     : 800,
@@ -275,7 +275,7 @@
 					}
 				}
 
-				href  = opts.href || obj.href || (isString(element) ? element : null) || element.find('img').data('url');
+				href  = opts.href  || obj.href || (isString(element) ? element : null);
 				title = opts.title !== undefined ? opts.title : obj.title || '';
 
 				content = opts.content || obj.content;
