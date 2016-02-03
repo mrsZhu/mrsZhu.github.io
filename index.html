@@ -1,292 +1,142 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <title>Hexo</title>
-  <meta name="author" content="John Doe">
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  
-  <meta property="og:site_name" content="Hexo"/>
-
-  
-    <meta property="og:image" content="undefined"/>
-  
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <meta name="generator" content="Hexo">
 
   
   
-    <link href="/favicon.png" rel="icon">
-  
-  
-  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
-  <script src="/js/jquery-2.0.3.min.js"></script>
-
-  <!-- analytics -->
   
 
-
-
+  
 </head>
 
- <body>  
-  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		<span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-	  <a class="navbar-brand" href="/">Hexo</a>
-      <div class="collapse navbar-collapse nav-menu">
-		<ul class="nav navbar-nav">
-		  
-		  <li>
-			<a href="/archives" title="All the articles.">
-			  <i class="fa fa-archive"></i>Archives
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/categories" title="All the categories.">
-			  <i class="fa fa-folder"></i>Categories
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/tags" title="All the tags.">
-			  <i class="fa fa-tags"></i>Tags
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/about" title="About me.">
-			  <i class="fa fa-user"></i>About
-			</a>
-		  </li>
-		  
-		</ul>
-      </div>
-    </div> <!-- container -->
-</nav>
-<div class="clearfix"></div>
-
+<!--
+<body class="home-template">
+-->
+<body class="home-template">
+<div id="perspective" class="perspective effect-movedown">
   <div class="container">
-  	<div class="content">
-    	 <div class="page-header">
-  <h1>Hexo</h1>
-</div>
+    <!-- wrapper -->
+    <div class="wrapper">
 
-<div class="row page">
+      <header class="site-head"  style="background: #24282b url(/img/img-bg.jpg) 0 -20%" >
+    <div class="vertical">
+        <div class="site-head-content inner">
+             <a class="blog-logo" href="/"><img src="/img/logo.svg" alt="Blog Logo"/></a> 
+            <h1 class="blog-title">Hexo</h1>
+            <h2 class="blog-description"><button id="showMenu">Show Menu</button></h2>
+        </div>
+    </div>
+</header>
 
-	
-	<div class="col-md-9">
-	
-
-		<div class="slogan">
-      <i class="fa fa-heart"></i>
-      Yet another bootstrap theme.
-</div>    
-		<div id="top_search"></div>
-		<div class="mypage">
-		
-		<!-- title and entry -->
-		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-02-03 </div>
-			<div class="article-title"><a href="/2016/02/03/2/" ></a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<p>这是小编，很早之前写的一篇博文，因为在2016年初 新换了窝，新年新气象，这些吃饭的家伙也一起换地。<br>言归正传，进入正题：<br>虽然IE现在仍然没有实现对混合模式的支持，但混合模式是一种非常好的提高页面美观的工具，我们可以考虑在页面中使用它。</p>
-<p>background-blend-mode的用法<br>CSS3里提供了大量的混合模式的用法，但对于我们来说最有用处的一种用法是使用background-blend-mode。这个属性能让我们混合两张图片或混合一个图片和一种背景色。<br>在下面的演示中我们将使用如下代码：<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"blend"</span>&gt;&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
-<p>使用的CSS：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.blend</span><span class="rules">&#123; <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">782px</span></span></span>; <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">540px</span></span></span>; <span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#3db6b8</span> <span class="function">url</span>(<span class="string">"lighthouse.jpg"</span>) no-repeat center center</span></span>;&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>下面我们就可以添加混合模式效果了。<br>我们需要添加另外一个CSS类，比如对于“multiply”模式：<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"blend multiply"</span>&gt;&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
-<p>然后我们再写一个CSS规则：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.blend</span><span class="class">.multiply</span> <span class="rules">&#123; <span class="rule"><span class="attribute">background-blend-mode</span>:<span class="value"> multiply</span></span>; &#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>###1.Multiply 正片叠底<br><em>Multiply 正片叠底</em>, 正如名称示意的，用混合颜色来增重基色，产生一种更深的颜色。用黑色正片叠底的结果是黑色，用白色正片叠底的结果是图片没有任何变化。<br>background-blend-mode: multiply;</p>
-<p>###2.Screen 滤色<br><em>Screen 滤色</em>是两个像素色的逆向正片叠底。滤色和正片叠底正好相反，使用白色进行虑色会产生白色，使用黑色虑色的结果是图像没有变化。<br>background-blend-mode: screen;</p>
-<p>###3.Overlay 叠加<br><em>Overlay 叠加</em>是一种复杂的混合模式。颜色变深的程度依赖于基色：浅色变的更浅，深色变得更深。<br>background-blend-mode: overlay;</p>
-<p>###4.Darken 变暗<br><em>Darken 变暗</em>, 让图片更暗。它会选择使用两个重叠的像素中颜色更深的那个。<br>background-blend-mode: darken;</p>
-<p>###5.Lighten 变亮<br>跟变暗相反，<em>lighten 变亮</em>模式会选择另个叠加的像素中颜色较轻的那个。<br>background-blend-mode: lighten;</p>
-<p>###6.Color dodge 颜色减淡<br><em>Color dodge 颜色减淡</em>减小对比度使基色变亮以反映混合色。<br>background-blend-mode: color-dodge;</p>
-<p>###7.Color burn 颜色加深<br><em>Color burn 颜色加深</em> 跟颜色减淡相反，通过增加对比度使基色变暗以反映混合色。<br>background-blend-mode: color-burn;</p>
-<p>###8.Hard light 强光模式<br><em>Hard light 强光模式</em>“强光”模式将产生一种强光照射的效果。如果“混合色”颜色“基色”颜色的像素更亮一些，那么“结果色”颜色将更亮；如果“混合色”颜色比“基色”颜色的像素更暗一些，那么“结果色”将更暗。<br>background-blend-mode: hard-light;</p>
-<p>###9.Soft light 柔光模式<br><em>Soft light 柔光模式</em>跟强光模式类似，“柔光”模式会产生一种柔光照射的效果。如果“混合色”颜色比“基色颜色的像素更亮一些，那么“结果色”将更亮；如果“混合色”颜色比“基色”颜色的像素更暗一些，那么“结果色”颜色将更暗，使图像的亮度反差增大。<br>background-blend-mode: soft-light;</p>
-<p>###10.Difference 差值模式<br><em>Difference 差值模式</em> “差值”模式是将从图像中“基色”颜色的亮度值减去“混合色”颜色的亮度值，如果结果为负，则取正值，产生反相效果。由于黑色的亮度值为0，白色的亮度值为255，因此用黑色着色不会产生任何影响，用白色着色则产生被着色的原始像素颜色的反相。<br>background-blend-mode: difference;</p>
-<p>###11.Exclusion 排除模式<br><em>Exclusion 排除模式</em>与“差值”模式相似，但是具有高对比度和低饱和度的特点。比用“差值”模式获得的颜色要柔和、更明亮一些。<br>background-blend-mode: exclusion;</p>
-<p>###12.Hue 色相模式<br><em>Hue 色相模式</em>只用“混合色”颜色的色相值进行着色，而使饱和度和亮度值保持不变。当“基色”颜色与“混合色”颜色的色相值不同时，才能使用描绘颜色进行着色<br>background-blend-mode: hue;</p>
-<p>###13.Saturation 饱和度模式<br><em>Saturation 饱和度模式</em>, “饱和度”模式的作用方式与“色相”模式相似，它只用“混合色”颜色的饱和度值进行着色，而使色相值和亮度值保持不变。当“基色”颜色与“混合色”颜色的饱和度值不同时，才能使用描绘颜色进行着色处理<br>background-blend-mode: saturation;</p>
-<p>Color 颜色模式<br><em>Color 颜色模式</em>能够使用“混合色”颜色的饱和度值和色相值同时进行着色，而使“基色”颜色的亮度值保持不变。“颜色”模式模式可以看成是“饱合度”模式和“色相”模式的综合效果。该模式能够使灰色图像的阴影或轮廓透过着色的颜色显示出来，产生某种色彩化的效果。<br>background-blend-mode: color;<br>Luminosity 亮度模式<br><em>Luminosity 亮度模式</em>能够使用“混合色”颜色的亮度值进行着色，而保持“基色”颜色的饱和度和色相数值不变。其实就是用“基色”中的“色相”和“饱和度”以及“混合色”的亮度创建“结果色”。此模式创建的效果是与“颜色”模式创建的效果相反<br>background-blend-mode: luminosity;</p>
-
-	
-	</div>
-  <a type="button" href="/2016/02/03/2/#more" class="btn btn-default more">閱讀本文</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-01-29 </div>
-			<div class="article-title"><a href="/2016/01/29/1/" >Flexbox模块化布局</a></div>						
-		</h3>
-	
+      
+<main class="content" role="main">
+  
+  <article class="post">
+    <header class="post-header">
+      <span class="post-meta">
+      <time datetime="2016-02-03T01:48:47.000Z" itemprop="datePublished">
+          2016-02-03
+      </time>
+    
+</span>
+      <h2 class="post-title"><a href="/2016/02/03/2/"></a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+      
+        这是小编，很早之前写的一篇博文，因为在2016年初 新换了窝，新年新气象，这些吃饭的家伙也一起换地。言归正传，进入正题：虽然IE现在仍然没有实现对混合模式的支持，但混合模式是一种非常好的提高页面美观的工具，我们可以考虑在页面中使用它。
+background-blend-mode的用法CSS3里提供了大量的混合模式的用法，但对于我们来说最有用处的一种用法是使用background-blend-mode。这个属性能让我们混合两张图片或混合一
+      
+      </p>
+      
+      <p>
+          <a href="/2016/02/03/2/" class="excerpt-link">Read More...</a>
+      </p>
+      
+    </section>
+  </article>
+  
+  <article class="post">
+    <header class="post-header">
+      <span class="post-meta">
+      <time datetime="2016-01-29T04:53:35.000Z" itemprop="datePublished">
+          2016-01-29
+      </time>
+    
+</span>
+      <h2 class="post-title"><a href="/2016/01/29/1/">Flexbox模块化布局</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+      
+        一、简介flexbox是一种新型的布局方式，是模块化的。在网页响应式布局中，起到了非常大的作用，小编以前在写wap页面时曾使用，但是因为兼容的问题，使用到的属性有限，但是随着浏览器的兼容性的提高，很多浏览器已经开始支持，如果你还因为响应式布局在不确定宽度、高度的情况下还想让子元素垂直居中，水平居中。二、兼容性如果你将Flexbox多版本混合在一起使用，可以得到以下浏览器的支持：Chrome any/Firefox any/Safari 
+      
+      </p>
+      
+      <p>
+          <a href="/2016/01/29/1/" class="excerpt-link">Read More...</a>
+      </p>
+      
+    </section>
+  </article>
+  
+  <nav class="pagination" role="pagination">
+    
+    <span class="page-number">Page 1 of 1</span>
+    
+  </nav>
+</main>
 
 
-			<div class="entry">
-  <div class="row">
-	
-	
-		<p>一、简介<br>flexbox是一种新型的布局方式，是模块化的。在网页响应式布局中，起到了非常大的作用，小编以前在写wap页面时曾使用，但是因为兼容的问题，使用到的属性有限，但是随着浏览器的兼容性的提高，很多浏览器已经开始支持，如果你还因为响应式布局在不确定宽度、高度的情况下还想让子元素垂直居中，水平居中。<br>二、兼容性<br>如果你将Flexbox多版本混合在一起使用，可以得到以下浏览器的支持：<br>Chrome any/Firefox any/Safari any/Opera 12.1+/IE 10+/iOS any/Android any<br>三、优点<br>先说一下flexbox的优点：<br>1.如果元素容器没有足够的空间，我们无需计算每个元素的宽度，就可以设置他们在同一行；<br>2.可以快速让他们布局在一列；<br>3.可以方便让他们对齐容器的左、右、中间等；<br>4.无需修改结构就可以改变他们的显示顺序；<br>5.如果元素容器设置百分比和视窗大小改变，不用提心未指定元素的确切宽度而破坏布局，因为容器中的每个子元素都可以自动分配容器的宽度或高度的比例。<br>四、案例讲解<br>现在讲一下，flexbox具体使用(主要讲解一行显示)<br>首先写一段HTML<br> <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"parent"</span>&gt;</span><br><span class="line">       &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"child-one"</span>&gt;&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line"></span><br><span class="line">       &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"child-two"</span>&gt;&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line"></span><br><span class="line">       &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"child-three"</span>&gt;&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.parent</span>&#123;<span class="comment">//先定义父级是一个盒子模型</span></span><br><span class="line">      <span class="attribute">display</span>:-webkit-flex;</span><br><span class="line">      <span class="attribute">display</span>:-moz-flex;</span><br><span class="line">      <span class="attribute">display</span>:-ms-flex;</span><br><span class="line">      <span class="attribute">display</span>:flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>*display: inline-flex|flex取决于是内联元素还是块<br>举例：parent相当于一个家庭的所有资源，家里有三个儿子，想要分家，作为父亲肯定是均等分配资源，就可以如下分：<br>.child-one,.child-two,.child-three{flex:1;}</p>
-<ul>
-<li>flex：除了safari其他浏览器都支持。IE9以上<br>如果其中一个儿子比较大方说我只需要其中200px，其他的让他们分，那就可以如下分：<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.child-one</span><span class="rules">&#123;<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">200px</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.child-two</span>,<span class="class">.child-three</span><span class="rules">&#123;<span class="rule"><span class="attribute">flex</span>:<span class="value"><span class="number">1</span></span></span>;&#125;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>如此就是在所有资源中减去200px，剩下的两兄弟均等分配。<br>如果其中一个儿子因为经济来源有限，可能就需要多给点，需要吧所有 资源的一半给老大，其他的两个人均分<br>就可以如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.child-one</span><span class="rules">&#123;<span class="rule"><span class="attribute">flex</span>:<span class="value"><span class="number">2</span></span></span></span>&#125;</span><br><span class="line"><span class="class">.child-two</span>,<span class="class">.child-three</span><span class="rules">&#123;<span class="rule"><span class="attribute">flex</span>:<span class="value"><span class="number">1</span></span></span>;&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>flex 这些没有单位的数值，是作为比例来计算的。<br>flex的取值分为三部分（flex-grow、flex-shrink、flex-basis）<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.child-one</span><span class="rules">&#123;<span class="rule"><span class="attribute">flex</span>:<span class="value"><span class="number">1</span> <span class="number">200px</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.child-two</span><span class="rules">&#123;<span class="rule"><span class="attribute">flex</span>:<span class="value"><span class="number">2</span> <span class="number">300px</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.child-three</span><span class="rules">&#123;<span class="rule"><span class="attribute">flex</span>:<span class="value"><span class="number">1</span> <span class="number">250px</span></span></span>;&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>这段代码的意思就是，如果是一行平铺的情况下，父级的总宽度为950px,第一个子元素宽度为200px,第二个子元素宽度为300px,第三个宽度为250px，但是最后还会剩下200px，这时候flex的第一个数值就起作用了，就需要1：2:1的比例均分200px 这样.child-one和.child-three就分别增加50像素 ,.child-two就增加100px<br>还有一种：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.child-one</span><span class="rules">&#123;<span class="rule"><span class="attribute">flex</span>:<span class="value"><span class="number">1</span> <span class="number">1</span> <span class="number">300px</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.child-two</span><span class="rules">&#123;<span class="rule"><span class="attribute">flex</span>:<span class="value"><span class="number">2</span> <span class="number">3</span> <span class="number">400px</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.child-three</span><span class="rules">&#123;<span class="rule"><span class="attribute">flex</span>:<span class="value"><span class="number">1</span> <span class="number">1</span> <span class="number">450px</span></span></span>;&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>这段代码的意思就是：父级的总宽度为950px，子元素的综合超过了200px,这时就按照第二个数值的比例缩短，这样得到的结果就是child-one和child-three分别减去40像素，child-two就减去120px。这种情况是很少使用的。<br>下面说一下，felxbox设置布局显示位置的属性：<br>再讲之前先说一个主轴、侧轴的概念：让flexbox正常工作的主轴和侧轴，他们看上去有点像X轴和Y轴，但还是有所差别的。主轴的方向主要是用来确定flex的主方向，所以你子元素要么放置在一行，要么放置在一列。侧轴主要垂直于主轴运行<br>1.flex-flow<br>flex-flow 属性是 flex-direction 和 flex-wrap 属性的速记属性。<br>flex-direction 属性规定灵活项目的方向。 flex-wrap 属性规定灵活项目是否拆行或拆列。<br>flex-flow:row wrap;   row:方向水平方向，相当于一行，wrap在必要的时候拆分，如果超出会换行，如果不写wrap如果超出也不会换行。<br><strong>注意：</strong>如果元素不是灵活的项目，则 flex-flow 属性不起作用。<br>2.align-items侧轴对齐伸缩项目<br> <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.parents</span><span class="rules">&#123;</span><br><span class="line">     <span class="rule"><span class="attribute">display</span>:<span class="value">flex</span></span>;</span><br><span class="line">     <span class="rule"><span class="attribute">flex-flow</span>:<span class="value"> row wrap</span></span>;</span><br><span class="line">     <span class="rule"><span class="attribute">align-items</span>:<span class="value">flex-start/flex-end/center/stretch/baseline</span><br><span class="line"></span></span></span>&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="/images/1.png" alt=""></p>
-<p>如果parents的高度为600px，子项目的高度分别为200px/300px/400px，就会有如上的效果<br>3.justify-content：主轴对齐伸缩项目<br>如果parents的宽度为1000px,子项目的宽度分别为200px/260px/300px，就会有如下效果：<br> <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.parents</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">display</span>:<span class="value">flex</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">flex-flow</span>:<span class="value">row wrap</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">justify-content</span>:<span class="value">flex-start/flex-end/center/space-between/space-around</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p><img src="/images/1.png" alt="Paste_Image.png"><br>** 未完待续，。。。。</p>
-
-	
-	</div>
-  <a type="button" href="/2016/01/29/1/#more" class="btn btn-default more">閱讀本文</a>
-</div>
-
-		
-
-		</div>
-
-		<!-- pagination -->
-		<div>
-  		<center>
-		<div class="pagination">
-<ul class="pagination">
-	 
-</ul>
-</div>
-
-  		</center>
-		</div>
-
-		
-		
-	</div> <!-- col-md-9 -->
-
-	
-		<div class="col-md-3">
-	<div id="sidebar">
-	
-			
-  <div id="site_search">
-   <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="搜尋" class="st-search-input st-default-search-input form-control"/>
-   </div>  
-  <div id="local-search-result"></div>
+      
+<footer class="site-footer">
+  
+  <div class="inner">
+     <section class="copyright">All content copyright <a href="/">Hexo</a> &copy; 2014 &bull; All rights reserved.</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
   </div>
+</footer>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
 
 
-		
-			
-		
-			
-
-		
-			
-<div class="widget">
-  <h4>最新文章</h4>
-  <ul class="entry list-unstyled">
-    
-      <li>
-        <a href="/2016/02/03/2/" ><i class="fa fa-file-o"></i>...</a>
-      </li>
-    
-      <li>
-        <a href="/2016/01/29/1/" ><i class="fa fa-file-o"></i>Flexbox模块化布局...</a>
-      </li>
-    
-  </ul>
-</div>
-
-		
-			
-<div class="widget">
-	<h4>鏈接</h4>
-	<ul class="blogroll list-unstyled">
-	
-		<li><i class="fa fa-github"></i><a href="https://github.com/wzpan/freemind/" title="Freemind's Github repository." target="_blank"]);">Freemind</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="http://www.github.com/wzpan" title="My Github account." target="_blank"]);">My Github</a></li>
-	
-		<li><i class="fa fa-linkedin"></i><a href="http://www.linkedin.com/in/hahack" title="My Linkin account." target="_blank"]);">My LinkedIn</a></li>
-	
-	</ul>
-</div>
 
 
-		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
 
-	
-	
-</div> <!-- row-fluid -->
-	</div>
   </div>
-  <div class="container-narrow">
-  <footer> <p>
-  &copy; 2016 John Doe
-  
-      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
-</p> </footer>
-</div> <!-- container-narrow -->
-  
+</div>
 
+<nav  class="outer-nav top horizontal">
 
-  
-<a id="gotop" href="#">   
-  <span>▲</span> 
-</a>
+          <a class="icon-home"  href="/"><span>Home</span></a>
 
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/search.js"></script> 
+          <a class="icon-news"  href="/archive"><span>Archive</span></a>
 
+          <a class="icon-image"  href="/images"><span>Images</span></a>
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
+          <a class="icon-wiki"  href="/wiki/2014-10-28-wiki/"><span>Wiki</span></a>
 
+          <a class="icon-Favorites"  href="/favorites"><span>Favorites</span></a>
 
+          <a class="icon-mail"  href="/about/2014-09-11-mabao/"><span>Contact</span></a>
 
+</nav>
+
+</div>
 </body>
-   </html>
+</html>

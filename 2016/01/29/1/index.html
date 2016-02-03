@@ -1,113 +1,57 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <title>Flexbox模块化布局 | Hexo</title>
-  <meta name="author" content="John Doe">
-  
-  <meta name="description" content="一、简介flexbox是一种新型的布局方式，是模块化的。在网页响应式布局中，起到了非常大的作用，小编以前在写wap页面时曾使用，但是因为兼容的问题，使用到的属性有限，但是随着浏览器的兼容性的提高，很多浏览器已经开始支持，如果你还因为响应式布局在不确定宽度、高度的情况下还想让子元素垂直居中，水平居中。">
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <meta property="og:title" content="Flexbox模块化布局"/>
-  <meta property="og:site_name" content="Hexo"/>
-
-  
-    <meta property="og:image" content="undefined"/>
-  
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <meta name="generator" content="Hexo">
 
   
   
-    <link href="/favicon.png" rel="icon">
-  
-  
-  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
-  <script src="/js/jquery-2.0.3.min.js"></script>
-
-  <!-- analytics -->
   
 
-
-
+  
 </head>
 
- <body>  
-  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		<span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-	  <a class="navbar-brand" href="/">Hexo</a>
-      <div class="collapse navbar-collapse nav-menu">
-		<ul class="nav navbar-nav">
-		  
-		  <li>
-			<a href="/archives" title="All the articles.">
-			  <i class="fa fa-archive"></i>Archives
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/categories" title="All the categories.">
-			  <i class="fa fa-folder"></i>Categories
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/tags" title="All the tags.">
-			  <i class="fa fa-tags"></i>Tags
-			</a>
-		  </li>
-		  
-		  <li>
-			<a href="/about" title="About me.">
-			  <i class="fa fa-user"></i>About
-			</a>
-		  </li>
-		  
-		</ul>
-      </div>
-    </div> <!-- container -->
-</nav>
-<div class="clearfix"></div>
-
+<!--
+<body class="post-template">
+-->
+<body class="home-template">
+<div id="perspective" class="perspective effect-movedown">
   <div class="container">
-  	<div class="content">
-    	 
+    <!-- wrapper -->
+    <div class="wrapper">
 
+      <header class="site-head"  style="background: #24282b url(/img/img-bg.jpg) 0 -20%" >
+    <div class="vertical">
+        <div class="site-head-content inner">
+             <a class="blog-logo" href="/"><img src="/img/logo.svg" alt="Blog Logo"/></a> 
+            <h1 class="blog-title">Hexo</h1>
+            <h2 class="blog-description"><button id="showMenu">Show Menu</button></h2>
+        </div>
+    </div>
+</header>
 
-	
-		<div class="page-header">		
-			<h1> Flexbox模块化布局</h1>
-		</div>		
-	
+      
 
-
-
-<div class="row post">
-	<!-- cols -->
-	
-	<div id="top_meta"></div>
-	<div class="col-md-9">
-	
-
-	<!-- content -->
-	<div class="mypage">		
-	  		
-
-	  <p>一、简介<br>flexbox是一种新型的布局方式，是模块化的。在网页响应式布局中，起到了非常大的作用，小编以前在写wap页面时曾使用，但是因为兼容的问题，使用到的属性有限，但是随着浏览器的兼容性的提高，很多浏览器已经开始支持，如果你还因为响应式布局在不确定宽度、高度的情况下还想让子元素垂直居中，水平居中。<br>二、兼容性<br>如果你将Flexbox多版本混合在一起使用，可以得到以下浏览器的支持：<br>Chrome any/Firefox any/Safari any/Opera 12.1+/IE 10+/iOS any/Android any<br>三、优点<br>先说一下flexbox的优点：<br>1.如果元素容器没有足够的空间，我们无需计算每个元素的宽度，就可以设置他们在同一行；<br>2.可以快速让他们布局在一列；<br>3.可以方便让他们对齐容器的左、右、中间等；<br>4.无需修改结构就可以改变他们的显示顺序；<br>5.如果元素容器设置百分比和视窗大小改变，不用提心未指定元素的确切宽度而破坏布局，因为容器中的每个子元素都可以自动分配容器的宽度或高度的比例。<br>四、案例讲解<br>现在讲一下，flexbox具体使用(主要讲解一行显示)<br>首先写一段HTML<br> <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"parent"</span>&gt;</span><br><span class="line">       &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"child-one"</span>&gt;&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line"></span><br><span class="line">       &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"child-two"</span>&gt;&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line"></span><br><span class="line">       &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"child-three"</span>&gt;&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
+<main class="content" role="main">
+  <article class="post">
+    <span class="post-meta">
+      <time datetime="2016-01-29T04:53:35.000Z" itemprop="datePublished">
+          2016-01-29
+      </time>
+    
+</span>
+    <h1 class="post-title">Flexbox模块化布局</h1>
+    <section class="post-content">
+      <p>一、简介<br>flexbox是一种新型的布局方式，是模块化的。在网页响应式布局中，起到了非常大的作用，小编以前在写wap页面时曾使用，但是因为兼容的问题，使用到的属性有限，但是随着浏览器的兼容性的提高，很多浏览器已经开始支持，如果你还因为响应式布局在不确定宽度、高度的情况下还想让子元素垂直居中，水平居中。<br>二、兼容性<br>如果你将Flexbox多版本混合在一起使用，可以得到以下浏览器的支持：<br>Chrome any/Firefox any/Safari any/Opera 12.1+/IE 10+/iOS any/Android any<br>三、优点<br>先说一下flexbox的优点：<br>1.如果元素容器没有足够的空间，我们无需计算每个元素的宽度，就可以设置他们在同一行；<br>2.可以快速让他们布局在一列；<br>3.可以方便让他们对齐容器的左、右、中间等；<br>4.无需修改结构就可以改变他们的显示顺序；<br>5.如果元素容器设置百分比和视窗大小改变，不用提心未指定元素的确切宽度而破坏布局，因为容器中的每个子元素都可以自动分配容器的宽度或高度的比例。<br>四、案例讲解<br>现在讲一下，flexbox具体使用(主要讲解一行显示)<br>首先写一段HTML<br> <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"parent"</span>&gt;</span><br><span class="line">       &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"child-one"</span>&gt;&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line"></span><br><span class="line">       &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"child-two"</span>&gt;&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line"></span><br><span class="line">       &lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"child-three"</span>&gt;&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.parent</span>&#123;<span class="comment">//先定义父级是一个盒子模型</span></span><br><span class="line">      <span class="attribute">display</span>:-webkit-flex;</span><br><span class="line">      <span class="attribute">display</span>:-moz-flex;</span><br><span class="line">      <span class="attribute">display</span>:-ms-flex;</span><br><span class="line">      <span class="attribute">display</span>:flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>*display: inline-flex|flex取决于是内联元素还是块<br>举例：parent相当于一个家庭的所有资源，家里有三个儿子，想要分家，作为父亲肯定是均等分配资源，就可以如下分：<br>.child-one,.child-two,.child-three{flex:1;}</p>
 <ul>
@@ -121,107 +65,90 @@
 <p><img src="/images/1.png" alt=""></p>
 <p>如果parents的高度为600px，子项目的高度分别为200px/300px/400px，就会有如上的效果<br>3.justify-content：主轴对齐伸缩项目<br>如果parents的宽度为1000px,子项目的宽度分别为200px/260px/300px，就会有如下效果：<br> <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.parents</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">display</span>:<span class="value">flex</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">flex-flow</span>:<span class="value">row wrap</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">justify-content</span>:<span class="value">flex-start/flex-end/center/space-between/space-around</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
 <p><img src="/images/1.png" alt="Paste_Image.png"><br>** 未完待续，。。。。</p>
-	  
-	</div>
 
-	<div>
-  	<center>
-	<div class="pagination">
-<ul class="pagination">
-	 
-				
-    	<li class="prev"><a href="/2016/02/03/2/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一頁</a></li>
-  		
-
-        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
-
-		
-          <li class="next disabled"><a>下一頁<i class="fa fa-arrow-circle-o-right"></i></a></li>
-        
-	
-</ul>
-</div>
-
-    </center>
-	</div>
-	
-	<!-- comment -->
-	
-<section id="comment">
-  <h2 class="title">留言</h2>
-
-  
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>John Doe</h4>
+    <p>作为挨踢业的伪设计狮伪技术牛 搬过砖也种过地：爱看、爱听、爱玩儿、爱折腾、机械水电、泥瓦木匠啥都来</p>
+</section>
+      <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-sina-weibo" href="http://v.t.sina.com.cn/share/share.php?title=作为挨踢业的伪设计狮伪技术牛 搬过砖也种过地：爱看、爱听、爱玩儿、爱折腾、机械水电、泥瓦木匠啥都来 ?url=http://yoursite.com/2016/01/29/1/" target="_blank">
+        <span class="hidden">weibo</span>
+    </a>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://yoursite.com/2016/01/29/1/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/01/29/1/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://yoursite.com/2016/01/29/1/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
 </section>
 
-	</div> <!-- col-md-9/col-md-12 -->
-		
-	
-	<div id="side_meta">
-		<div class="col-md-3" id="post_meta"> 
-
-	<!-- date -->
-	
-	<div class="meta-widget">
-	<i class="fa fa-clock-o"></i>
-	2016-01-29 
-	</div>
-	
-
-	<!-- categories -->
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
     
+    <a class="newer-posts" href="/2016/02/03/2/">
+        ← 
+    </a>
+    
+    <span class="icon-logo">•</span>
+    
+</nav>
 
-	<!-- tags -->
-		
+  <div id="comment" class="comments-area">
+    <h4 class="title"><a href="#disqus_comments" name="disqus_comments">Comments</a></h4>
+    
+</div>
 
-	<!-- toc -->
-	<div class="meta-widget">
-	
-	</div>
-	
-    <hr>
-	
-</div><!-- col-md-3 -->
-
-	</div>
-		
-
-</div><!-- row -->
+</main>
 
 
-
-	</div>
+      
+<footer class="site-footer">
+  
+  <div class="inner">
+     <section class="copyright">All content copyright <a href="/">Hexo</a> &copy; 2014 &bull; All rights reserved.</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
   </div>
-  <div class="container-narrow">
-  <footer> <p>
-  &copy; 2016 John Doe
-  
-      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
-</p> </footer>
-</div> <!-- container-narrow -->
-  
+</footer>
 
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-  
-<a id="gotop" href="#">   
-  <span>▲</span> 
-</a>
-
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/search.js"></script> 
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
 
 
 
+
+
+  </div>
+</div>
+
+<nav  class="outer-nav top horizontal">
+
+          <a class="icon-home"  href="/"><span>Home</span></a>
+
+          <a class="icon-news"  href="/archive"><span>Archive</span></a>
+
+          <a class="icon-image"  href="/images"><span>Images</span></a>
+
+          <a class="icon-wiki"  href="/wiki/2014-10-28-wiki/"><span>Wiki</span></a>
+
+          <a class="icon-Favorites"  href="/favorites"><span>Favorites</span></a>
+
+          <a class="icon-mail"  href="/about/2014-09-11-mabao/"><span>Contact</span></a>
+
+</nav>
+
+</div>
 </body>
-   </html>
+</html>
